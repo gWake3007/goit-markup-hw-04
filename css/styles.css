@@ -5,6 +5,14 @@
   --studio-title: #2e2f42;
   --name-team-var: #2e2f42;
   --cornflower: #e7e9fc;
+  /* IRIS */
+  --primacy-brand: #4d5ae5;
+  /* OCEAN */
+  --pressed-state: #404bbf;
+  /* CLOUD */
+  --light: #f4f4fd;
+  /* GREEN */
+  --success: #31d0aa;
 }
 
 p,
@@ -58,7 +66,6 @@ section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 
 .section:last-child {
   background-color: #f4f4fd;
@@ -246,11 +253,23 @@ section {
   padding-left: 16px;
 }
 
-/* Button-Section */
+/* HERO */
 
-.button-section {
+.hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-fone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
 }
 
 .site-title {
@@ -310,7 +329,7 @@ section {
   font-size: 16px;
 }
 
-.first-section{
+.first-section {
   padding-bottom: 0;
 }
 
@@ -340,6 +359,13 @@ section {
   text-align: center;
 }
 
+.text-section-team {
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
 .third-section-div {
   padding: 32px 16px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -348,7 +374,17 @@ section {
   background: #ffffff;
 }
 
-/* Studio-NameTeam-VAR */
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
 .name-team {
   font-weight: 500;
   font-size: 20px;
@@ -357,6 +393,22 @@ section {
   color: var(--name-team-var);
 }
 
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  background-color: var(--primacy-brand);
+  border: none;
+  border-radius: 50%;
+  fill: var(--light);
+  text-decoration: none;
+}
+
+.social-link:hover,
+.social-link:hofuc {
+  background-color: var(--pressed-state);
+}
 /* footer */
 .footer-portfolio {
   background: #2e2f42;
@@ -404,4 +456,43 @@ section {
   margin-top: 16px;
   line-height: 1.5;
   width: 264px;
+}
+
+.box-social {
+  margin-left: 120px;
+  display: flex;
+}
+
+.name-social {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.fot-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon-footer {
+  width: 24px;
+  height: 24px;
+}
+
+.fot-social-link {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.fot-social-link:hover,
+.fot-social-link:focus {
+  background-color: var(--success);
+}
+
+.name-social{
+  color: #ffffff;
 }
