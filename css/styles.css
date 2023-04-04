@@ -206,7 +206,8 @@ section {
 .all-button:hover,
 .all-button:focus {
   color: #ffffff;
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
+  border-color: var(--pressed-state);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -255,6 +256,10 @@ section {
   align-items: flex-start;
   padding: 32px;
   padding-left: 16px;
+}
+
+.portfolio-title .link{
+  display: inline-block;
 }
 
 .portfolio-title .link:hover {
@@ -311,7 +316,7 @@ section {
 
 .button-studio:hover,
 .button-studio:focus {
-  color: #404bbf;
+  background-color: var(--pressed-state);
 }
 
 /* First-Section */
@@ -349,7 +354,7 @@ section {
   margin: 24px 100px;
 }
 
-.first-section-link {
+.first-section-div {
   display: block;
   height: 112px;
   margin-bottom: 8px;
@@ -526,6 +531,7 @@ section {
   line-height: 1.5;
   list-style: none;
   margin: 0;
+  margin-top: 16px;
   padding-left: 0;
 }
 
